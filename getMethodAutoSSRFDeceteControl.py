@@ -92,7 +92,7 @@ class getMethodSSRFDetect():
 
 if __name__ == '__main__':
     print('SSRF Decete Beginning ...')
-    testURL = 'http://www.fmsh.com/?test=1&tets2=2&test3=4&url=5'
+    testURL = 'http://www.xxxx.com/?test=1&tets2=2&test3=4&url=5'
     serverURL =  'http://www.testserver.com'
     serverIPAddr = '127.0.0.1'
     serverPort = 12345
