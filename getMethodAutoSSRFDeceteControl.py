@@ -81,7 +81,6 @@ class getMethodSSRFDetect():
         return encrypted_text
 
     def sendFileNameToServer(self,fileName):
-        fileName = 'test.txt:aaa.txt:bbb.txt'
         client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         client.connect((self.serverIPAddr, self.serverPort))
         encrypted_text = self.encrypt(self.password + ':' + fileName)
